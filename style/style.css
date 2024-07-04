@@ -61,6 +61,8 @@ padding:20px;
 .content-container p{
     padding: 30px;
 
+    font-size: large;
+
     text-align: justify;
 }
 
@@ -68,34 +70,42 @@ padding:20px;
 .content-container{
     display: flex;
     flex-flow: row;
-    gap: 200px;
-
     justify-content: space-between;
+
+    
+}
+
+.content-container > *{
+    width: 50%;
 }
 
 .services-content{
     display: flex;
-    justify-content: space-between;
 
-    padding: 40px;
+    flex-wrap: wrap-reverse;
+    /* justify-content: space-between; */
+
+    padding: 20px;
+
+    justify-content: space-between;
 }
 
 .header1{
     text-align: center;
 }
 
-.services-content img{
+.services-content > *{
     
     width: 300px;
     height: 300px;
+
+    padding: 5px;
+
+
+    
 }
 
-.more-serv{
-    float: right;
-    font-size: 30px;
 
-    word-spacing: 10px;
-}
 
 .products img{
     width: 300px;
@@ -104,14 +114,35 @@ padding:20px;
 }
 
 
+.header2{
+    display: flex;
+
+}
+.gaper{
+    width: 82%;
+    /* background-color: brown; */
+}
+
+.header2 a{
+
+    font-size: 30px;
+
+}
+.products > *{
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 0;
+}
+
 .products{
     display: flex;
-    background-color:gray ;
-    width: 100%;
-    flex-wrap: wrap;
-
     justify-content: space-between;
 
+    flex-wrap: wrap-reverse;
+}
 
-    padding: 20px;
+.products-container{
+    text-align: center;
+    margin: 20px;
+    background-color: darkgrey;
 }
